@@ -1,10 +1,8 @@
 <template>
   <div>
-    <Hello id="hello"/>
-    <Index class="index" text="Latest works" />
     <div id="cards-area">
       <div id="cards-grid">
-        <Card v-for="(card, i) in getCards" :key="i"
+        <Card v-for="(card, i) in cards" :key="i"
           class="item"
           :thumbnail="card.thumbnail"
           :title="card.title" 
@@ -24,26 +22,14 @@ export default Vue.extend({
         return{
             cards: this.$t('cards')
         }
-    },
-    computed: {
-      getCards(){
-        let cards = [];
-        for(let i = 0; i < 3; i++){
-          cards.push(this.cards[i]);
-        }
-        return cards;
-      }
     }
 })
 </script>
 
 <style scoped>
-  #hello{
-    margin-top: 60px;
-  }
-  .index{
-    margin-top: 40px;
-  }
+#cards-area{
+  margin-top: 60px;
+}
   #cards-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(420px, 420px));

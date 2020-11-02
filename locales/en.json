@@ -1,0 +1,124 @@
+{
+    "hello": {
+        "title": "It is Muto Tsujimoto.",
+        "message": "I am working on the systems and apps, which can solve the problems to make the users much more comfortable."
+    },
+    "cards": [
+        {
+            "thumbnail": "thumbnail/thumbnail_4.png",
+            "title": "LINE Bot Service",
+            "tags": ["LINE"],
+            "description": "Introduced LINE's Messaging API so that people in the field can easily use \"progress management\". We used Flex Message to pursue the same visibility as the Web version. Questions such as \"When will you finish your work today?\" Will be answered by counting back from the progress at this stage.",
+            "infomations": [
+                {
+                    "title": "Developed on", 
+                    "data": "2020"
+                },
+                {
+                    "title": "Languages", 
+                    "data": "Python"
+                },
+                {
+                    "title": "Frameworks", 
+                    "data": "FastAPI"
+                },
+                {
+                    "title": "Server", 
+                    "data": "Google App Engine"
+                }
+            ]
+        },{
+            "thumbnail": "thumbnail/thumbnail_2.png",
+            "title": "Progress management system",
+            "tags": ["SPA", "WebSocket"],
+            "description": "By displaying the data acquired from the \"progress data collection system\" as a table or graph on the browser, anyone can easily grasp the progress and abnormalities. By using WebSocket to receive progress data, the latest data is always displayed.",
+            "infomations": [
+                {
+                    "title": "Developed on", 
+                    "data": "2020"
+                },
+                {
+                    "title": "Languages", 
+                    "data": "C#, SQL, Typescript, HTML, CSS, Ladder logic"
+                },
+                {
+                    "title": "Frameworks", 
+                    "data": "ASP.NET Core, Nuxt.js"
+                },
+                {
+                    "title": "Server", 
+                    "data": "CentOS 8"
+                }
+            ]
+        },{
+            "thumbnail": "thumbnail/thumbnail_1.png",
+            "title": "Forklift operator calling app",
+            "tags": ["iOS", "Android", "GPS"],
+            "description": "Call the forklift operator when the product is ready to be unloaded. By recording \"who\" called \"when\" and \"where\" in the database so that the operator can check it immediately, the waste of transportation work has been greatly reduced.",
+            "infomations": [
+                {
+                    "title": "Developed on", 
+                    "data": "2020"
+                },
+                {
+                    "title": "Languages", 
+                    "data": "C#, SQL, Dart"
+                },
+                {
+                    "title": "Frameworks", 
+                    "data": "ASP.NET Core, Flutter"
+                },
+                {
+                    "title": "Server", 
+                    "data": "CentOS 8"
+                }
+            ]
+        },{
+            "thumbnail": "thumbnail/thumbnail_3.png",
+            "title": "Progress data collection system",
+            "tags": ["Console", "TCP/IP"],
+            "description": "Communicate with PLC (programmable logic controller) in the factory using Socket. Reads the value of the sensor connected to the PLC and writes it to the database. By performing processing asynchronously, it is possible to acquire data in a 100ms cycle.",
+            "infomations": [
+                {
+                    "title": "Developed on", 
+                    "data": "2020"
+                },
+                {
+                    "title": "Languages", 
+                    "data": "C#, SQL"
+                },
+                {
+                    "title": "Frameworks", 
+                    "data": ".NET Core"
+                },
+                {
+                    "title": "Server", 
+                    "data": "CentOS 8"
+                }
+            ]
+        },{
+            "thumbnail": "thumbnail/thumbnail_5.png",
+            "title": "Design support system",
+            "tags": ["iOS", "Android", "GPS"],
+            "description": "We have built a system that can complete clerical processing related to design work such as management of drawings and property information, output of forms, recording of processing time, and calculation of productivity. Not only does it reduce the wasted time that occurs each time, but it also enables clear management.",
+            "infomations": [
+                {
+                    "title": "Developed on", 
+                    "data": "2019"
+                },
+                {
+                    "title": "Languages", 
+                    "data": "C#, SQL"
+                },
+                {
+                    "title": "Frameworks", 
+                    "data": ".NET Framework"
+                },
+                {
+                    "title": "Server", 
+                    "data": "Microsoft Windows Server"
+                }
+            ]
+        }
+    ]
+}

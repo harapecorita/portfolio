@@ -1,0 +1,31 @@
+<template>
+        <nuxt-link :to="path">
+        <div class="button-content">
+            <span>{{title}}</span>
+            <div class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.47 4.53"><defs><style>.cls-1{fill:none;stroke:#231815;stroke-miterlimit:10;}</style></defs><line class="cls-1" y1="4.03" x2="28.35" y2="4.03"/><line class="cls-1" x1="14.17" y1="0.49" x2="28.35" y2="4.03"/></svg>
+            </div>
+        </div>
+        </nuxt-link>
+</template>
+
+<script>
+export default {
+    props: ["title", "path"]
+}
+</script>
+
+<style>
+.button-content{
+    font-size: 12px;
+    display: flex;
+}
+.arrow{
+    margin-left: 5px;
+    width: 25px;
+}
+a {
+    text-decoration: none;
+    color: #0F2540;
+}
+</style>
