@@ -143,7 +143,7 @@
     ],
     "profile": {
         "name": "Muto Tsujimoto",
-        "birthday": "1999.06.10",
+        "birthday": "June 10, 1999.",
         "contents": [
             {
                 "heading": "Nice to meet you",
@@ -186,7 +186,7 @@
                     "data": "CentOS, Apple macOS, Microsoft Windows Server"
                 },
                 {
-                    "title": "Cloud",
+                    "title": "Cloud Platforms",
                     "data": "Amazon Web Service, Google Cloud Platform"
                 },
                 {
