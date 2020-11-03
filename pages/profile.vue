@@ -6,6 +6,23 @@
     <p class="birth">
       {{ $t("profile.birthday") }}
     </p>
+    <div v-for="(content, i) in $t('profile.contents')" :key="i" class="content-box">
+      <Index :text="content.heading" />
+      <p v-for="(text, j) in content.texts" :key="j">
+        {{ text }}
+      </p>
+    </div>
+    <div class="content-box">
+      <Index :text="$t('profile.whatICanDo.heading')" />
+      <table>
+        <tr v-for="(row, j) in $t('profile.whatICanDo.rows')" :key="j">
+          <td class="title">
+            {{ row.title }}
+          </td>
+          <td>{{ row.data }}</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -32,5 +49,13 @@ export default Vue.extend({
 .birth {
   font-size: 12px;
   color: #6f7c8c;
+}
+.content-box{
+  margin-top: 50px;
+  color: #0f2540;
+  font-size: 14px;
+}
+.content-box .title {
+  width: 130px;
 }
 </style>
