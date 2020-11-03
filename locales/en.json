@@ -10,7 +10,7 @@
             "tags": [
                 "LINE"
             ],
-            "description": "Introduced LINE's Messaging API so that people in the field can easily use \"progress management\". We used Flex Message to pursue the same visibility as the Web version. Questions such as \"When will you finish your work today?\" Will be answered by counting back from the progress at this stage.",
+            "description": "We introduced LINE's Messaging API to make progress management easier than ever for those who work on the front line. \"Flex Message\" enables the user experience to be as easy as common web services. \n Just by asking \"When will you finish work today?\", the bot will automatically answer the question based on the current progress.",
             "infomations": [
                 {
                     "title": "Developed on",
