@@ -32,7 +32,7 @@
         },
         {
             "thumbnail": "thumbnail/thumbnail_2.png",
-            "title": "Progress management system",
+            "title": "Progress Management System",
             "tags": [
                 "SPA",
                 "WebSocket"
@@ -59,7 +59,7 @@
         },
         {
             "thumbnail": "thumbnail/thumbnail_1.png",
-            "title": "Forklift operator calling app",
+            "title": "Operator Call App",
             "tags": [
                 "Tablet",
                 "GPS"
@@ -86,7 +86,7 @@
         },
         {
             "thumbnail": "thumbnail/thumbnail_3.png",
-            "title": "Progress data collection system",
+            "title": "Progress Data Collection System",
             "tags": [
                 "Console",
                 "TCP/IP"
@@ -113,7 +113,7 @@
         },
         {
             "thumbnail": "thumbnail/thumbnail_5.png",
-            "title": "Design support system",
+            "title": "Design Support System",
             "tags": [
                 "Desktop"
             ],
