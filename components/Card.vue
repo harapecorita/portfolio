@@ -16,10 +16,10 @@
           </div>
         </div>
       </div>
-      <div v-if="description != undefined" class="description">
+      <div v-if="description != ''" class="description">
         {{ description }}
       </div>
-      <div v-if="infomations != undefined" class="infomations">
+      <div v-if="infomations != []" class="infomations">
         <table>
           <tr v-for="(infomation, i) in infomations" :key="i">
             <td class="title">
