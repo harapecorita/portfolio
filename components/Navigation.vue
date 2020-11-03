@@ -8,7 +8,6 @@
       </li>
     </ul>
     <div id="lang-selector">
-      <!-- <nuxt-link :to="switchLocalePath('ja')">JA</nuxt-link> | <nuxt-link :to="switchLocalePath('en')">EN</nuxt-link> -->
       <MoreButton
         v-if="$i18n.locale == 'en'"
         title="日本語"
