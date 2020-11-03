@@ -28,7 +28,7 @@ export default Vue.extend({
   },
   head() {
     return {
-      title: "Works",
+      title: "works",
     };
   },
 });

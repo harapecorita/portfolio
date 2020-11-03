@@ -20,8 +20,18 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-
+import Vue, { PropType } from "vue";
+type Infomation = {
+  title: Text;
+  data: Text;
+};
+type Card = {
+  thumbnail: Text;
+  title: Text;
+  tags: Text[];
+  description: Text;
+  infomations: Infomation[];
+};
 export default Vue.extend({
   data() {
     return {
@@ -29,8 +39,8 @@ export default Vue.extend({
     };
   },
   computed: {
-    getCards() {
-      let cards = [];
+    getCards(): Card[] {
+      let cards: Card[] = [];
       for (let i = 0; i < 3; i++) {
         cards.push(this.cards[i]);
       }

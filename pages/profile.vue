@@ -11,7 +11,7 @@ import Vue from "vue";
 export default Vue.extend({
   head() {
     return {
-      title: "Profile",
+      title: "profile",
     };
   },
 });
