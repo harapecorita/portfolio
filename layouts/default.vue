@@ -7,15 +7,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  pageTransition: {
-    name: "page",
-    mode: "out-in",
-  },
-};
-</script>
-
 <style>
 *,
 *::before,
@@ -87,22 +78,4 @@ body {
 #content {
   margin: 0 20px 20px 300px;
 }
-/* ******************************* */
-.page-enter-active {
-  transition: all 0.1s ease;
-}
-.page-leave-active {
-  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-}
-.page-enter {
-  transform: translateX(-10px);
-}
-.page-leave-to {
-  transform: translateX(10px);
-}
-/* ******************************* */
 </style>
