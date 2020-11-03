@@ -61,8 +61,7 @@
             "thumbnail": "thumbnail/thumbnail_1.png",
             "title": "Forklift operator calling app",
             "tags": [
-                "iOS",
-                "Android",
+                "Tablet",
                 "GPS"
             ],
             "description": "Call the forklift operator when the product is ready to be unloaded. By recording \"who\" called \"when\" and \"where\" in the database so that the operator can check it immediately, the waste of transportation work has been greatly reduced.",
@@ -116,9 +115,7 @@
             "thumbnail": "thumbnail/thumbnail_5.png",
             "title": "Design support system",
             "tags": [
-                "iOS",
-                "Android",
-                "GPS"
+                "Desktop"
             ],
             "description": "We have built a system that can complete clerical processing related to design work such as management of drawings and property information, output of forms, recording of processing time, and calculation of productivity. Not only does it reduce the wasted time that occurs each time, but it also enables clear management.",
             "infomations": [
@@ -191,7 +188,7 @@
                 },
                 {
                     "title": "Tests",
-                    "data": "Unit test design, TDD"
+                    "data": "Unit Test Design, Test-Driven Development"
                 },
                 {
                     "title": "Others",

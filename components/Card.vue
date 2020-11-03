@@ -19,7 +19,7 @@
       <div v-if="description != ''" class="description">
         {{ description }}
       </div>
-      <div v-if="infomations != []" class="infomations">
+      <div v-if="infomations.length > 0" class="infomations">
         <table>
           <tr v-for="(infomation, i) in infomations" :key="i">
             <td class="title">
