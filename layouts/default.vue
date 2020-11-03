@@ -1,19 +1,108 @@
 <template>
   <div>
-    <Header/>
+    <Header />
     <div id="content">
       <Nuxt />
     </div>
   </div>
 </template>
 
-<style>
-*,*::before,*::after{box-sizing:border-box}ul[class],ol[class]{padding:0}body,h1,h2,h3,h4,p,ul[class],ol[class],figure,blockquote,dl,dd{margin:0}html{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}ul[class],ol[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}article>*+*{margin-top:1em}input,button,textarea,select{font:inherit}img:not([alt]){filter:blur(10px)}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+<script>
+export default {
+  pageTransition: {
+    name: "page",
+    mode: "out-in",
+  },
+};
+</script>
 
-body{
-  background: #F0F2F5;
+<style>
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-#content{
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+ul[class],
+ol[class] {
+  list-style: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+article > * + * {
+  margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+img:not([alt]) {
+  filter: blur(10px);
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: #f0f2f5;
+}
+#content {
   margin: 0 20px 20px 300px;
 }
+/* ******************************* */
+.page-enter-active {
+  transition: all 0.3s ease;
+}
+.page-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+.page-enter {
+  transform: translateX(-10px);
+}
+.page-leave-to {
+  transform: translateX(10px);
+}
+/* ******************************* */
 </style>

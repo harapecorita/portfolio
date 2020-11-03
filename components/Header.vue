@@ -1,28 +1,30 @@
 <template>
-    <div id ="header">
-        <nuxt-link :to="localePath('/')"><h1 class="title">Muto Tsujimoto</h1></nuxt-link>
-        <Navigation/>
-    </div>
+  <div id="header">
+    <nuxt-link :to="localePath('/')"
+      ><h1 class="title">Muto Tsujimoto</h1></nuxt-link
+    >
+    <Navigation />
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
 
-export default Vue.extend({})
+export default Vue.extend({});
 </script>
 
 <style scoped>
-    #header{
-        width: 300px;
-        text-align: left;
-        position: absolute;
-        left: 0;
-        top: 0;
-        padding: 30px;
-    }
-    .title{
-        font-size: 22px;
-        margin: 30px 0 30px 0;
-        color: #0F2540;
-    }
+#header {
+  width: 300px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30px;
+}
+.title {
+  font-size: 22px;
+  margin: 30px 0 30px 0;
+  color: #0f2540;
+}
 </style>
