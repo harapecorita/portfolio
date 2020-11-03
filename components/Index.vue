@@ -1,19 +1,21 @@
 <template>
   <div id="index">
-    <h3 class="text">{{ text }}</h3>
+    <h3 class="text">
+      {{ text }}
+    </h3>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue'
 export default Vue.extend({
   props: {
     text: {
       type: Text,
-      required: true,
-    },
-  },
-});
+      required: true
+    }
+  }
+})
 </script>
 
 <style scoped>

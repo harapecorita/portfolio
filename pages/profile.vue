@@ -1,20 +1,24 @@
 <template>
   <div id="profile">
-    <h3 class="name">{{ $t("profile.name") }}</h3>
-    <p class="birth">{{ $t("profile.birthday") }}</p>
+    <h3 class="name">
+      {{ $t("profile.name") }}
+    </h3>
+    <p class="birth">
+      {{ $t("profile.birthday") }}
+    </p>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue'
 
 export default Vue.extend({
-  head() {
+  head () {
     return {
-      title: "profile",
-    };
-  },
-});
+      title: 'profile'
+    }
+  }
+})
 </script>
 
 <style scoped>

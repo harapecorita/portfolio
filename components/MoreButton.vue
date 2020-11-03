@@ -7,9 +7,9 @@
           <defs>
             <style>
               .cls-1 {
-                fill: none;
-                stroke: #231815;
-                stroke-miterlimit: 10;
+              fill: none;
+              stroke: #231815;
+              stroke-miterlimit: 10;
               }
             </style>
           </defs>
@@ -22,19 +22,19 @@
 </template>
 
 <script>
-import Vue from "vue";
+import Vue from 'vue'
 export default Vue.extend({
   props: {
     title: {
       type: Text,
-      required: true,
+      required: true
     },
     path: {
       type: Text,
-      required: true,
-    },
-  },
-});
+      required: true
+    }
+  }
+})
 </script>
 
 <style>

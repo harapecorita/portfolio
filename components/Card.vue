@@ -4,7 +4,7 @@
       :src="require('~/assets/' + thumbnail)"
       alt="thumbnail"
       class="image"
-    />
+    >
     <div class="card-content">
       <div class="title">
         <span class="text">
@@ -22,7 +22,9 @@
       <div v-if="infomations != undefined" class="infomations">
         <table>
           <tr v-for="(infomation, i) in infomations" :key="i">
-            <td class="title">{{ infomation.title }}</td>
+            <td class="title">
+              {{ infomation.title }}
+            </td>
             <td>{{ infomation.data }}</td>
           </tr>
         </table>
@@ -32,7 +34,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue";
+import Vue, { PropType } from 'vue'
 type Infomation = {
   title: Text;
   data: Text;
@@ -41,26 +43,28 @@ export default Vue.extend({
   props: {
     thumbnail: {
       type: Text,
-      required: true,
+      required: true
     },
     title: {
       type: Text,
-      required: true,
+      required: true
     },
     tags: {
       type: Array as PropType<Text[]>,
-      required: true,
+      required: true
     },
     description: {
       type: Text,
-      required: false,
+      default: '',
+      required: false
     },
     infomations: {
       type: Array as PropType<Infomation[]>,
-      required: false,
-    },
-  },
-});
+      default: [],
+      required: false
+    }
+  }
+})
 </script>
 
 <style scoped>

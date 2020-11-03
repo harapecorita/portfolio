@@ -23,19 +23,19 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue'
 export default Vue.extend({
-  data() {
+  data () {
     return {
       pages: [
-        { title: "hello", path: "/" },
-        { title: "profile", path: "/profile" },
-        { title: "works", path: "/works" },
-        { title: "contact", path: "/contact" },
-      ],
-    };
-  },
-});
+        { title: 'hello', path: '/' },
+        { title: 'profile', path: '/profile' },
+        { title: 'works', path: '/works' },
+        { title: 'contact', path: '/contact' }
+      ]
+    }
+  }
+})
 </script>
 
 <style scoped>

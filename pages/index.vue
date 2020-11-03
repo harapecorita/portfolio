@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue";
+import Vue from 'vue'
 type Infomation = {
   title: Text;
   data: Text;
@@ -33,26 +33,26 @@ type Card = {
   infomations: Infomation[];
 };
 export default Vue.extend({
-  data() {
+  data () {
     return {
-      cards: (this as any).$t("cards"),
-    };
+      cards: (this as any).$t('cards')
+    }
   },
   computed: {
-    getCards(): Card[] {
-      let cards: Card[] = [];
+    getCards (): Card[] {
+      const cards: Card[] = []
       for (let i = 0; i < 3; i++) {
-        cards.push(this.cards[i]);
+        cards.push(this.cards[i])
       }
-      return cards;
-    },
+      return cards
+    }
   },
-  head() {
+  head () {
     return {
-      title: "hello",
-    };
-  },
-});
+      title: 'hello'
+    }
+  }
+})
 </script>
 
 <style scoped>

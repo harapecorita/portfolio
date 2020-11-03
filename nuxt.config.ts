@@ -19,7 +19,6 @@ export default {
     ]
   },
 
-
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
   ],
@@ -49,7 +48,7 @@ export default {
         ],
         defaultLocale: 'ja',
         langDir: 'locales/',
-        strategy: 'prefix_and_default', // URLに言語のプレフィックスを追加するかの指定
+        strategy: 'prefix_except_default',
         vueI18n: {
           fallbackLocale: 'en'
         },
@@ -58,7 +57,6 @@ export default {
       }
     ]
   ],
-
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   }

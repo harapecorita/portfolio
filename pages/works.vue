@@ -18,20 +18,20 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue'
 
 export default Vue.extend({
-  data() {
+  data () {
     return {
-      cards: (this as any).$t("cards"),
-    };
+      cards: (this as any).$t('cards')
+    }
   },
-  head() {
+  head () {
     return {
-      title: "works",
-    };
-  },
-});
+      title: 'works'
+    }
+  }
+})
 </script>
 
 <style scoped>
