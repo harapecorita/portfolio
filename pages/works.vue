@@ -23,7 +23,7 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
-      cards: this.$t("cards"),
+      cards: (this as any).$t("cards"),
     };
   },
   head() {
