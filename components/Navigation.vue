@@ -54,9 +54,6 @@ a.text {
   color: #0f2540;
   font-size: 16px;
 }
-.nuxt-link-exact-active {
-  cursor: default;
-}
 #nav .nuxt-link-exact-active {
   background: #0f2540;
 }
