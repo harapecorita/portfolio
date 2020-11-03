@@ -11,7 +11,7 @@
 #header {
   width: 300px;
   text-align: left;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   padding: 30px;
