@@ -2,9 +2,9 @@
   <div>
     <ul id="nav">
       <li v-for="(page, i) in pages" :key="i" class="content">
-        <nuxt-link class="text" :to="localePath(page.path)">{{
-          page.title
-        }}</nuxt-link>
+        <nuxt-link class="text" :to="localePath(page.path)">
+          {{ page.title }}
+        </nuxt-link>
       </li>
     </ul>
     <div id="lang-selector">

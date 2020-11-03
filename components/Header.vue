@@ -1,8 +1,8 @@
 <template>
   <div id="header">
-    <nuxt-link :to="localePath('/')"
-      ><h1 class="title">Muto Tsujimoto</h1></nuxt-link
-    >
+    <nuxt-link :to="localePath('/')">
+      <h1 class="title">Muto Tsujimoto</h1>
+    </nuxt-link>
     <Navigation />
   </div>
 </template>
