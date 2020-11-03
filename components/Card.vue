@@ -10,7 +10,7 @@
         <span class="text">
           {{ title }}
         </span>
-        <div v-if="tags.length > 0" class="tag-box">
+        <div v-if="tags != undefined" class="tag-box">
           <div v-for="(tag, i) in tags" :key="i" class="tag">
             <span>{{ tag }}</span>
           </div>
@@ -31,10 +31,36 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: ["thumbnail", "title", "tags", "description", "infomations"],
+<script lang="ts">
+import Vue, { PropType } from "vue";
+type Infomation = {
+  title: Text;
+  data: Text;
 };
+export default Vue.extend({
+  props: {
+    thumbnail: {
+      type: Text,
+      required: true,
+    },
+    title: {
+      type: Text,
+      required: true,
+    },
+    tags: {
+      type: Array as PropType<Text[]>,
+      required: true,
+    },
+    description: {
+      type: Text,
+      required: false,
+    },
+    infomations: {
+      type: Array as PropType<Infomation[]>,
+      required: false,
+    },
+  },
+});
 </script>
 
 <style scoped>

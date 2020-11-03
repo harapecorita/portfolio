@@ -22,9 +22,19 @@
 </template>
 
 <script>
-export default {
-  props: ["title", "path"],
-};
+import Vue from "vue";
+export default Vue.extend({
+  props: {
+    title: {
+      type: Text,
+      required: true,
+    },
+    path: {
+      type: Text,
+      required: true,
+    },
+  },
+});
 </script>
 
 <style>

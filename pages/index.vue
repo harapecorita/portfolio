@@ -37,6 +37,11 @@ export default Vue.extend({
       return cards;
     },
   },
+  head() {
+    return {
+      title: "hello",
+    };
+  },
 });
 </script>
 

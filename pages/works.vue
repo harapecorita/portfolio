@@ -26,6 +26,11 @@ export default Vue.extend({
       cards: this.$t("cards"),
     };
   },
+  head() {
+    return {
+      title: "Works",
+    };
+  },
 });
 </script>
 

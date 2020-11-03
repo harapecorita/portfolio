@@ -7,7 +7,8 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'portfolio',
+    title: 'Muto Tsujimoto',
+    titleTemplate: '%s | Muto Tsujimoto',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,7 +18,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  
+
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [

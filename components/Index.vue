@@ -8,7 +8,12 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  props: ["text", "path"],
+  props: {
+    text: {
+      type: Text,
+      required: true,
+    },
+  },
 });
 </script>
 
