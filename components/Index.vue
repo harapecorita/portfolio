@@ -11,7 +11,7 @@ import Vue from 'vue'
 export default Vue.extend({
   props: {
     text: {
-      type: Text,
+      type: String,
       required: true
     }
   }

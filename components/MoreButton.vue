@@ -26,11 +26,11 @@ import Vue from 'vue'
 export default Vue.extend({
   props: {
     title: {
-      type: Text,
+      type: String,
       required: true
     },
     path: {
-      type: Text,
+      type: String,
       required: true
     }
   }

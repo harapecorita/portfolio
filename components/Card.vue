@@ -36,17 +36,17 @@
 <script lang="ts">
 import Vue, { PropType } from 'vue'
 type Infomation = {
-  title: Text;
-  data: Text;
+  title: string;
+  data: string;
 };
 export default Vue.extend({
   props: {
     thumbnail: {
-      type: Text,
+      type: String,
       required: true
     },
     title: {
-      type: Text,
+      type: String,
       required: true
     },
     tags: {
@@ -54,7 +54,7 @@ export default Vue.extend({
       required: true
     },
     description: {
-      type: Text,
+      type: String,
       default: '',
       required: false
     },

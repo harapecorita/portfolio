@@ -22,14 +22,14 @@
 <script lang="ts">
 import Vue from 'vue'
 type Infomation = {
-  title: Text;
-  data: Text;
+  title: string;
+  data: string;
 };
 type Card = {
-  thumbnail: Text;
-  title: Text;
-  tags: Text[];
-  description: Text;
+  thumbnail: string;
+  title: string;
+  tags: string[];
+  description: string;
   infomations: Infomation[];
 };
 export default Vue.extend({
