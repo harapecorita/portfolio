@@ -42,7 +42,7 @@ export default Vue.extend({
 
 <style scoped>
 #hello {
-  margin-top: 60px;
+  padding-top: 60px;
 }
 .index {
   margin-top: 40px;
