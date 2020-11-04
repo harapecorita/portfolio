@@ -39,6 +39,7 @@ export default Vue.extend({
 
 <style>
 .button-content {
+  font-family: 'Roboto Mono','Noto Sans JP';
   font-size: 12px;
   display: flex;
 }

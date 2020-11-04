@@ -15,6 +15,7 @@
   padding: 20px;
 }
 .title {
+  font-family: 'Roboto Mono', monospace;
   font-size: 22px;
   margin: 40px 0 40px 0;
   color: #0f2540;

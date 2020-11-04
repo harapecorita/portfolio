@@ -46,6 +46,7 @@ ul {
   list-style: none;
 }
 .content {
+  font-family: 'Roboto Mono', monospace;
   padding: 10px 0 10px 0;
 }
 a.text {
