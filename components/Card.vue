@@ -93,7 +93,7 @@ export default Vue.extend({
 .tag {
   margin-left: 10px;
   height: 24px;
-  line-height: 20px;
+  line-height: 18px;
   background: #c9e1ec;
   border: 1px solid #3a8fb7;
   border-radius: 2px;

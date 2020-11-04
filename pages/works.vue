@@ -1,19 +1,6 @@
 <template>
-  <div>
-    <div id="cards-area">
-      <div id="cards-grid">
-        <Card
-          v-for="(card, i) in cards"
-          :key="i"
-          class="item"
-          :thumbnail="card.thumbnail"
-          :title="card.title"
-          :tags="card.tags"
-          :description="card.description"
-          :infomations="card.infomations"
-        />
-      </div>
-    </div>
+  <div id="cards-area">
+    <CardsGrid :cards="cards" />
   </div>
 </template>
 
@@ -37,11 +24,5 @@ export default Vue.extend({
 <style scoped>
 #cards-area {
   margin-top: 60px;
-}
-#cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 420px));
-  justify-content: start;
-  gap: 20px;
 }
 </style>

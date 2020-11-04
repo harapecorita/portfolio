@@ -2,49 +2,24 @@
   <div>
     <Hello id="hello" />
     <Index class="index" text="Latest works" />
-    <div id="cards-area">
-      <div id="cards-grid">
-        <Card
-          v-for="(card, i) in getCards"
-          :key="i"
-          class="item"
-          :thumbnail="card.thumbnail"
-          :title="card.title"
-          :tags="card.tags"
-          :description="card.description"
-          :infomations="card.infomations"
-        />
-      </div>
+    <div id="card-area">
+      <CardsGrid :cards="cards" :cards-number="3" />
+      <MoreButton
+        title="goto works"
+        :path="localePath('/works')"
+        class="more-button"
+      />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-type Infomation = {
-  title: string;
-  data: string;
-};
-type Card = {
-  thumbnail: string;
-  title: string;
-  tags: string[];
-  description: string;
-  infomations: Infomation[];
-};
+
 export default Vue.extend({
   data () {
     return {
       cards: (this as any).$t('cards')
-    }
-  },
-  computed: {
-    getCards (): Card[] {
-      const cards: Card[] = []
-      for (let i = 0; i < 3; i++) {
-        cards.push(this.cards[i])
-      }
-      return cards
     }
   },
   head () {
@@ -62,10 +37,11 @@ export default Vue.extend({
 .index {
   margin-top: 40px;
 }
-#cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 420px));
-  justify-content: start;
-  gap: 20px;
+#card-area{
+  position: relative;
+  padding-bottom: 30px;
+}
+.more-button {
+  margin-top: 14px;
 }
 </style>
