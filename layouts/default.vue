@@ -6,7 +6,7 @@
       <span class="line l3" />
     </div>
     <Sidebar id="sidebar" :class="{ opened : isOpened }" />
-    <div id="main" :class="{ opened : isOpened }">
+    <div id="main">
       <Nuxt />
     </div>
   </div>
@@ -58,7 +58,6 @@ body {
     transition: all 0.3s;
     left: -100%;
     width: 100%;
-    height: 100%;
   }
   #sidebar.opened{
     z-index: 998;
