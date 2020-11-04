@@ -41,7 +41,7 @@ body {
   background: #f0f2f5;
 }
 #main {
-  margin: 60px 20px 20px 300px;
+  padding: 60px 18px 18px 300px;
 }
 #sidebar{
   background: #f0f2f5;
@@ -52,7 +52,7 @@ body {
 }
 @media screen and (max-width: 759px){
   #main {
-    margin-left: 20px;
+  padding: 60px 18px 18px 18px;
   }
   #sidebar {
     transition: all 0.3s;
