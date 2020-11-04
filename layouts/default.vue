@@ -1,13 +1,117 @@
 <template>
   <div>
-    <Header />
-    <div id="content">
+    <div id="button" :class="{ opened : isOpened }" @click="toggleSidebar()">
+      <span class="line l1" />
+      <span class="line l2" />
+      <span class="line l3" />
+    </div>
+    <Sidebar id="sidebar" :class="{ opened : isOpened }" />
+    <div id="main" :class="{ opened : isOpened }">
       <Nuxt />
     </div>
   </div>
 </template>
 
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  data () {
+    return {
+      isOpened: false
+    }
+  },
+  watch: {
+    $route (to, from) : void {
+      if (to.path !== from.path && this.isOpened) {
+        this.toggleSidebar()
+      }
+    }
+  },
+  methods: {
+    toggleSidebar (): void {
+      this.isOpened = !this.isOpened
+    }
+  }
+})
+</script>
+
 <style>
+body {
+  background: #f0f2f5;
+}
+#main {
+  margin: 0 20px 20px 300px;
+}
+#sidebar{
+  background: #f0f2f5;
+  width: 300px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+@media screen and (max-width: 759px){
+  #main {
+    margin: 0 20px 20px 20px;
+  }
+  #sidebar {
+    transition: all 0.3s;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+  }
+  #sidebar.opened{
+    z-index: 998;
+    left: 0;
+  }
+  #button {
+    transition: all 0.3s;
+    background: #ffffff;
+    border: 1px solid #6f7c8c;
+    width: 40px;
+    height: 40px;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+  }
+  .line {
+    transition: all 0.3s;
+    width: 26px;
+    height: 1px;
+    left: 6px;
+    background-color: #6f7c8c;
+    position: absolute;
+  }
+  .l1 {
+    top: 12px;
+  }
+  .l2 {
+    top: 19px;
+  }
+  .l3 {
+    top: 26px;
+  }
+  #button.opened{
+    background: none;
+    border: none;
+  }
+  #button.opened .l1{
+    top: 19px;
+    left: 6px;
+    transform: rotate(-45deg);
+  }
+  #button.opened .l2{
+    left: 60%;
+    opacity: 0;
+  }
+  #button.opened .l3{
+    top: 19px;
+    left: 6px;
+    transform: rotate(45deg);
+  }
+}
+/* -------------------------------------- */
 *,
 *::before,
 *::after {
@@ -70,12 +174,5 @@ img:not([alt]) {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-body {
-  background: #f0f2f5;
-}
-#content {
-  margin: 0 20px 20px 300px;
 }
 </style>

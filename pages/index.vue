@@ -64,7 +64,7 @@ export default Vue.extend({
 }
 #cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 420px));
+  grid-template-columns: repeat(auto-fit, minmax(0, 420px));
   justify-content: start;
   gap: 20px;
 }

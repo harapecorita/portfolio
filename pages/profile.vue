@@ -59,4 +59,8 @@ export default Vue.extend({
 .content-box .title {
   width: 140px;
 }
+td{
+  vertical-align: top;
+}
+
 </style>

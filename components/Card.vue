@@ -70,7 +70,7 @@ export default Vue.extend({
 <style scoped>
 .card {
   background: #ffffff;
-  width: 420px;
+  max-width: 420px;
 }
 .image {
   background: #6f7c8c;
@@ -111,9 +111,10 @@ export default Vue.extend({
 .infomations {
   margin-top: 12px;
 }
-.infomations td {
+td{
   font-size: 12px;
   color: #6f7c8c;
+  vertical-align: top;
 }
 .infomations .title {
   width: 130px;

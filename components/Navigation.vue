@@ -60,6 +60,7 @@ a.text {
   color: #f0f2f5;
 }
 #lang-selector {
+  width: 100%;
   margin-top: 30px;
 }
 #lang-selector a {
