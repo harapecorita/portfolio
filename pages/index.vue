@@ -2,14 +2,12 @@
   <div>
     <Hello id="hello" />
     <Index class="index" text="Latest works" />
-    <div id="card-area">
-      <CardsGrid :cards="cards" :cards-number="3" />
-      <MoreButton
-        title="goto works"
-        :path="localePath('/works')"
-        class="more-button"
-      />
-    </div>
+    <CardsGrid :cards="cards" :cards-number="3" />
+    <MoreButton
+      title="goto works"
+      :path="localePath('/works')"
+      class="more-button"
+    />
   </div>
 </template>
 
@@ -36,10 +34,6 @@ export default Vue.extend({
 }
 .index {
   margin-top: 40px;
-}
-#card-area{
-  position: relative;
-  padding-bottom: 30px;
 }
 .more-button {
   margin-top: 14px;
