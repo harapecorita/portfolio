@@ -1,7 +1,5 @@
 <template>
-  <div id="cards-area">
-    <CardsGrid :cards="cards" />
-  </div>
+  <CardsGrid :cards="cards" />
 </template>
 
 <script lang="ts">
@@ -20,9 +18,3 @@ export default Vue.extend({
   }
 })
 </script>
-
-<style scoped>
-#cards-area {
-  margin-top: 60px;
-}
-</style>

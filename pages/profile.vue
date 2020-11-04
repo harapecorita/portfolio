@@ -1,5 +1,5 @@
 <template>
-  <div id="profile">
+  <div>
     <h3 class="name">
       {{ $t("profile.name") }}
     </h3>
@@ -39,9 +39,6 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-#profile {
-  padding-top: 60px;
-}
 .name {
   font-size: 22px;
   color: #0f2540;

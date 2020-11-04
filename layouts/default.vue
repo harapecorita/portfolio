@@ -41,7 +41,7 @@ body {
   background: #f0f2f5;
 }
 #main {
-  margin: 0 20px 20px 300px;
+  margin: 60px 20px 20px 300px;
 }
 #sidebar{
   background: #f0f2f5;
@@ -52,7 +52,7 @@ body {
 }
 @media screen and (max-width: 759px){
   #main {
-    margin: 0 20px 20px 20px;
+    margin-left: 20px;
   }
   #sidebar {
     transition: all 0.3s;
@@ -70,8 +70,8 @@ body {
     border: 1px solid #6f7c8c;
     width: 40px;
     height: 40px;
-    top: 8px;
-    right: 8px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     position: fixed;
     z-index: 999;

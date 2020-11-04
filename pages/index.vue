@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hello id="hello" />
+    <Hello />
     <Index class="index" text="Latest works" />
     <CardsGrid :cards="cards" :cards-number="3" />
     <MoreButton
@@ -29,9 +29,6 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-#hello {
-  padding-top: 60px;
-}
 .index {
   margin-top: 40px;
 }
