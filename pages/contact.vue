@@ -1,5 +1,10 @@
 <template>
-  <div />
+  <div>
+    <span>{{ $t("contact") }}</span>
+    <div class="mail">
+      <a href="mailto:muto.tsujimoto@gmail.com">muto.tsujimoto@gmail.com</a>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -15,4 +20,14 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+span{
+  font-size: 14px;
+}
+.mail{
+  margin-top: 8px;
+}
+.mail a{
+  font-size: 16px;
+  text-decoration: underline;
+}
 </style>
